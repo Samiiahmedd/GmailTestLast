@@ -13,6 +13,8 @@
 		26E7E62E2AEA8AB200D0A880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E7E62C2AEA8AB200D0A880 /* Main.storyboard */; };
 		26E7E6302AEA8AB300D0A880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E7E62F2AEA8AB300D0A880 /* Assets.xcassets */; };
 		26E7E6332AEA8AB300D0A880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E7E6312AEA8AB300D0A880 /* LaunchScreen.storyboard */; };
+		26E7E63C2AEA8B1A00D0A880 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 26E7E63B2AEA8B1A00D0A880 /* GoogleSignIn */; };
+		26E7E63E2AEA8F5800D0A880 /* credentials (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 26E7E63D2AEA8F5800D0A880 /* credentials (1).plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		26E7E62F2AEA8AB300D0A880 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26E7E6322AEA8AB300D0A880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26E7E6342AEA8AB300D0A880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E7E63D2AEA8F5800D0A880 /* credentials (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "credentials (1).plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E7E63C2AEA8B1A00D0A880 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				26E7E6262AEA8AB200D0A880 /* AppDelegate.swift */,
+				26E7E63D2AEA8F5800D0A880 /* credentials (1).plist */,
 				26E7E6282AEA8AB200D0A880 /* SceneDelegate.swift */,
 				26E7E62A2AEA8AB200D0A880 /* ViewController.swift */,
 				26E7E62C2AEA8AB200D0A880 /* Main.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = GmailTestLast;
+			packageProductDependencies = (
+				26E7E63B2AEA8B1A00D0A880 /* GoogleSignIn */,
+			);
 			productName = GmailTestLast;
 			productReference = 26E7E6232AEA8AB200D0A880 /* GmailTestLast.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 26E7E61A2AEA8AB200D0A880;
+			packageReferences = (
+				26E7E63A2AEA8B1A00D0A880 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 26E7E6242AEA8AB200D0A880 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +139,7 @@
 				26E7E6332AEA8AB300D0A880 /* LaunchScreen.storyboard in Resources */,
 				26E7E6302AEA8AB300D0A880 /* Assets.xcassets in Resources */,
 				26E7E62E2AEA8AB200D0A880 /* Main.storyboard in Resources */,
+				26E7E63E2AEA8F5800D0A880 /* credentials (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26E7E63A2AEA8B1A00D0A880 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26E7E63B2AEA8B1A00D0A880 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26E7E63A2AEA8B1A00D0A880 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 26E7E61B2AEA8AB200D0A880 /* Project object */;
 }
